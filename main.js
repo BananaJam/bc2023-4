@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
         }
         var builded = builder.build({'data': {'indicators' : data} });
         console.log(builded);
-        res.end(JSON.stringify(builded));
+        res.end(builded);
     })
 });
 
